@@ -95,7 +95,8 @@ class CourseReproTests(unittest.TestCase):
                 with patch("course_repro.experiment._completion", return_value=fake) as completion:
                     path = run_experiment(ROOT, task="table", context_count=1, seed=2023,
                                           model="test-model", max_requests=10,
-                                          output_root=Path(tmp))
+                                          output_root=Path(tmp),
+                                          conditions=("baseline", "reminder"), include_hard_benign=False)
             self.assertEqual(completion.call_count, 10)
             self.assertEqual((path / "status.txt").read_text().strip(), "complete")
             rows = (path / "responses.jsonl").read_text().splitlines()

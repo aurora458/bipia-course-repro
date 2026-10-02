@@ -1,3 +1,7 @@
+# 课程实验入口
+
+这是基于 Microsoft/BIPIA 的课程复现仓库。四组对照实验、运行命令、结果边界和课堂汇报说明见 [课程复现说明](课程复现说明.md)；以下保留原项目 README 内容。尚未运行真实 API 前，请勿把本地测试当作模型实验结果。
+
 # BIPIA
 
 [![Paper](https://img.shields.io/badge/Paper-%F0%9F%8E%93-lightblue?style=flat-square)](https://arxiv.org/abs/2312.14197)
